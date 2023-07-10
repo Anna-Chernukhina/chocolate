@@ -1,4 +1,6 @@
-/* font fascia */
+/* font fascia 
+cdn normalize
+*/
 :root {
     --accent-color: #FD9222;
     --main-text-color: #111;
@@ -7,6 +9,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
 }
 
 a {
@@ -16,6 +19,9 @@ a {
 ul,
 ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 p,
@@ -25,8 +31,16 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1167px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -44,6 +58,11 @@ h6 {
 }
 
 /* header */
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
 .header-logo {
     color: var(--main-text-color);
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -52,10 +71,35 @@ h6 {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
 }
 
 .header-logo-accent {
     font-style: italic;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.header-socials {
+    display: flex;
+    gap: 18px;
 }
 
 .header-menu-link {
@@ -72,8 +116,12 @@ h6 {
 }
 
 /** -------1 section HERO------- */
-.hero {
+.hero {}
+
+.hero-container {
     background-color: #48433c;
+    border-radius: 30px;
+    padding: 380px 40px 40px 40px;
 }
 
 .hero-title {
@@ -82,6 +130,13 @@ h6 {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
 }
 
 .hero-button {
@@ -91,12 +146,19 @@ h6 {
     font-weight: 600;
     background-color: var(--accent-color);
     cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    margin-right: 14px;
 }
 
 .hero-link {
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
 }
 
 .hero-down {
@@ -105,6 +167,8 @@ h6 {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    display: block;
+    margin-left: auto;
 }
 
 /** -------2 section Advantages------- */
