@@ -1,4 +1,9 @@
 /* font fascia */
+:root {
+    --accent-color: #FD9222;
+    --main-text-color: #111;
+    --second-text-color: #fff;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -13,9 +18,34 @@ ol {
     list-style-type: none;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* header */
 .header-logo {
-    color: #111;
+    color: var(--main-text-color);
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 18px;
     font-family: Montserrat;
@@ -29,7 +59,7 @@ ol {
 }
 
 .header-menu-link {
-    color: #111;
+    color: var(--main-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -38,10 +68,10 @@ ol {
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-    color: #FD9222;
+    color: var(--accent-color);
 }
 
-/* 1 section HERO */
+/** -------1 section HERO------- */
 .hero {
     background-color: #48433c;
 }
@@ -59,7 +89,7 @@ ol {
     font-size: 14px;
     font-family: inherit;
     font-weight: 600;
-    background-color: #FD9222;
+    background-color: var(--accent-color);
     cursor: pointer;
 }
 
@@ -77,4 +107,213 @@ ol {
     letter-spacing: -0.03em;
 }
 
-/* 2 section Advantages */
+/** -------2 section Advantages------- */
+.advantages {
+    background-color: #1E1823;
+}
+
+/* .advantages-list {}
+
+.advantages-list-item {} */
+
+.advantages-subtitle {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.advantages-item-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+/** -------3 section Taste------- */
+.taste {}
+
+.taste-title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.taste-title span {
+    color: var(--accent-color);
+}
+
+.taste-text {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/* .taste-list {}
+
+.taste-list-item {}
+
+.taste-img {} */
+
+.taste-subtitle {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.light {
+    color: #dcdcdc;
+}
+
+/** -------4 section Made------- */
+.made {}
+
+.made-title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.made-title span {
+    color: var(--accent-color);
+}
+
+.made-text {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.made-list {}
+
+.made-list-item {}
+
+.made-item-text {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/** -------5 section Loved------- */
+.loved {}
+
+.loved-title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.loved-title span {
+    color: var(--accent-color);
+}
+
+.loved-list {}
+
+.loved-list-item {}
+
+.loved-subtitle {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.loved-item-text {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.loved-btn {
+    color: var(--main-text-color);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/** -------Footer------- */
+.footer {
+    background-color: #1E1823;
+}
+
+.footer-main-text {
+    color: var(--second-text-color);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+}
+
+.footer-main-text span {
+    color: var(--accent-color);
+}
+
+.footer-address-head {
+    color: var(--second-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.footer-address {
+    font-style: normal;
+}
+
+.footer-address-list {}
+
+.footer-addres-item {}
+
+.footer-address-link {
+    color: var(--second-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.footer-navigation {}
+
+.footer-menu {}
+
+.footer-menu-item {}
+
+.footer-menu-link {
+    color: var(--second-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
