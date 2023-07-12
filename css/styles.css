@@ -163,7 +163,7 @@ body {
     background-color: #48433c;
     border-radius: 30px;
     padding: 380px 40px 40px 40px;
-    background-image: url(../images/chocolate-covered-cocoa-powder.jpg), linear-gradient(rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.60));
+    background-image: url(../images/chocolate_main.jpg), linear-gradient(rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.60));
 }
 
 .hero-title {
@@ -384,7 +384,7 @@ body {
     flex-wrap: wrap;
     /* gap: 40px 28px; */
     column-gap: 28px;
-    row-gap: 40px;
+    row-gap: 60px;
     margin-bottom: 49px;
 }
 
@@ -395,6 +395,14 @@ body {
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: #fff;
     box-shadow: 0px 9.049315452575684px 100px 0px rgba(17, 17, 17, 0.03);
+    position: relative;
+}
+
+.loved-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .loved-subtitle {
