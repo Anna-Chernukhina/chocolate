@@ -298,6 +298,31 @@ body {
     border: 1px solid #fd9222;
     background: #fff;
     padding: 28px 36px 28px 28px;
+    position: relative;
+}
+
+.taste-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 1px solid var(--accent-color);
+    padding: 4px;
+    border-radius: 50%;
+    fill: var(--accent-color);
+}
+
+.taste-item.orange {
+    background-color: var(--accent-color);
+}
+
+.taste-item.orange .taste-icon,
+.taste-item.black .taste-icon {
+    border: 1px solid #ffffff;
+    fill: var(--secondary-text-color);
+}
+
+.taste-item.black {
+    background-color: #1E1823;
 }
 
 .taste-img {
